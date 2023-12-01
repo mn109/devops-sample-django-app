@@ -33,4 +33,4 @@
 LICENSE
 README.md
 **/.env.*
-.env
+.venv
