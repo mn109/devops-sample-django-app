@@ -8,4 +8,5 @@
 Sample Python application on Django with PostgreSQL database.
 
 
-```
+
+http://127.0.0.1:8000/
