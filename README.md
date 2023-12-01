@@ -17,5 +17,9 @@ http://127.0.0.1:8000/
 =======
 Use `docker-compose build` to build the application, `docker-compose up` to run it, and `docker-compose down` to stop it.
 
+<<<<<<< HEAD
 The website is available at http://127.0.0.1:8000/
 >>>>>>> aacdf24098e72486b0fbe810bff413031d546030
+=======
+You may check the Party Parrots website out at http://127.0.0.1:8000/.
+>>>>>>> a962e08fe4b855b520bdc50f3b96fb423d79b522
