@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+    environment:
+      DJANGO_DB_HOST: db
+      DJANGO_DB_NAME: app
+      DJANGO_DB_USER: worker
+      DJANGO_DB_PASS: worker
+      DJANGO_DB_PORT: 5432
+      DJANGO_DEBUG: "False"
+    ports:
+      - "8000:8000"
+    networks:
+      - mynetwork
+    volumes:
+      - media_volume:/app/media
+
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: app
+      POSTGRES_USER: worker
+      POSTGRES_PASSWORD: worker
+    networks:
+      - mynetwork 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  mynetwork:
+    driver: bridge
+    
+volumes:
+  postgres_data:
+  media_volume:
+
