@@ -13,4 +13,4 @@ This Python application on Django with PostgreSQL database is deployed using the
 
 Use `docker-compose build` to build the application, `docker-compose up` to run it, and `docker-compose down` to stop it.
 
-You may the Party Parrots website at http://127.0.0.1:8000/.
+You may check the Party Parrots website out at http://127.0.0.1:8000/.
