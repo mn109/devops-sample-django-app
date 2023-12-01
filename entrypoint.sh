@@ -1,9 +1,8 @@
 #!/bin/bash
 set -e
 
-# Run database migrations
 echo "Running database migrations..."
+sleep 5
 python manage.py migrate
 
-# Execute the passed command
 exec "$@"
