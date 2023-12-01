@@ -5,8 +5,15 @@
 <br>
 <h3></h3>
 
-Sample Python application on Django with PostgreSQL database.
+This Python application on Django with PostgreSQL database is deployed using the Docker Compose tool.
 
+[Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are required to deploy it.
 
+<<<<<<< HEAD
 
 http://127.0.0.1:8000/
+=======
+Use `docker-compose build` to build the application, `docker-compose up` to run it, and `docker-compose down` to stop it.
+
+The website is available at http://127.0.0.1:8000/
+>>>>>>> aacdf24098e72486b0fbe810bff413031d546030
