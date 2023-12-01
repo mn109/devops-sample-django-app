@@ -4,4 +4,6 @@ db.sqlite3
 .compose/web/*
 **/*.pyc
 __pycache__
+.venv
 
+.venv
