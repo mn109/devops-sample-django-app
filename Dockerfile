@@ -5,14 +5,6 @@ FROM python:3.8.18-slim-bullseye
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
-# Set additional environment variables for Django.
-ENV DJANGO_DB_HOST=db
-ENV DJANGO_DB_NAME=app
-ENV DJANGO_DB_USER=worker
-ENV DJANGO_DB_PASS=worker
-ENV DJANGO_DB_PORT=5432
-ENV DJANGO_DEBUG=False
-
 # Set the working directory in the container.
 WORKDIR /app
 
@@ -25,7 +17,6 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 # Copy the source code into the container.
 COPY . /app/
-
 
 # Copy entrypoint script and make it executable
 COPY entrypoint.sh /usr/local/bin/
