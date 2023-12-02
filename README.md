@@ -11,6 +11,6 @@ This Python application on Django with PostgreSQL database is deployed using the
 
 [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are required to deploy it.
 
-Use `docker-compose build` to build the application, `docker-compose up` to run it, and `docker-compose down` to stop it.
+Use `docker-compose build` to build the application, `docker-compose up -d` to run it, and `docker-compose down` to stop it.
 
-You may check the Party Parrots website out at http://127.0.0.1:8000/.
+You may check the Party Parrots website out at http://0.0.0.0:8000/.
